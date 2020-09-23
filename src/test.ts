@@ -8,11 +8,9 @@ const isSeparator = ( s: string ) =>  s.trim() === '-'.repeat( 80 )
 const isWeatherData = ( s: string ) => !isSeparator( s )
 
 const getWeather = (entry: string[]) => {
-  let [head, ...rest] = entry
+  const [head, ...rest] = entry
 
   if( !isWeather( head )) return
-
-  rest = rest.filter( s => s.trim() === '-'.repeat( 80 ) )
 
   const json = rest.filter( isWeatherData ).join('').trim()
 
