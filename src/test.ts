@@ -24,6 +24,8 @@ const getWeather = (entry: string[]) => {
   if (typeof t === 'number') temperatureC = t
   if (typeof r === 'number') rainMM = r
 
+  if( rainMM === Number.NEGATIVE_INFINITY || rainMM === 0 ) return
+
   return { temperatureC, rainMM }
 }
 
