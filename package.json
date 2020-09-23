@@ -1,0 +1,24 @@
+{
+  "name": "traverse-logs",
+  "version": "1.0.0",
+  "description": "Traverse mojule logs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node ./dist/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojule/traverse-logs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mojule/traverse-logs/issues"
+  },
+  "homepage": "https://github.com/mojule/traverse-logs#readme",
+  "dependencies": {
+    "@types/node": "^14.11.2"
+  }
+}
